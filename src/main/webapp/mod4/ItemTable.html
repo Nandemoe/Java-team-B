@@ -1,0 +1,55 @@
+﻿<!-- All Rights Reserved ,Copyright(c) IT Educations Inc. Limited -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>商品一覧画面</title>
+</head>
+
+<body>
+  <br>
+  <div align="center">
+    <h2>商品一覧画面</h2>
+  </div>
+  <br>
+  <div align="center">
+    <table border="1">
+      <caption>飲料商品一覧</caption>
+      <tr>
+        <th rowspan="2">区分</th>
+        <th colspan="2">詳細</th>
+      </tr>
+      <tr>
+        <th>商品名</th>
+        <th>価格</th>
+      </tr>
+      <tr>
+        <th rowspan="2">飲料食品</th>
+        <td>お味噌汁</td>
+        <td onclick="calcTax(150)">150円</td>
+      </tr>
+      <tr>
+        <td>おすまし</td>
+        <td onclick="calcTax(150)">150円</td>
+      </tr>
+      <tr>
+        <th rowspan="2">野菜飲料</th>
+        <td>グリーンパワー</td>
+        <td onclick="calcTax(100)">100円</td>
+      </tr>
+      <tr>
+        <td>お野菜</td>
+        <td onclick="calcTax(100)">100円</td>
+      </tr>
+      </table><br><br>
+    </div>
+    <div align="center">
+      <a href="Menu.html">メニュー画面へ戻る</a><br>
+    </div>
+    <script type="text/javascript">
+    function calcTax(price){
+      alert("税込金額：" + (price * 1.08) + "円");
+    }
+    </script>
+</body>
+</html>

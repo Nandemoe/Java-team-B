@@ -1,0 +1,45 @@
+﻿<!-- All Rights Reserved, Copyright(c) IT Educations Inc. Limited -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>情報の入力</title>
+</head>
+
+<body>
+  <form method="post"  action="/answers/yourself">
+    <h1>情報の入力</h1>
+    <hr><br>
+
+    名前：  <input type="text" name="name"><br><br>
+    性別：
+      <input type="radio" name="gender" value="男性"  checked>男性
+      <input type="radio" name="gender" value="女性">女性<br><br>
+    出身地：
+      <select name="from">
+        <option value="" selected></option>
+        <option value="北海道">北海道</option>
+        <option value="東北">東北</option>
+        <option value="関東">関東</option>
+        <option value="信越">信越</option>
+        <option value="北陸">北陸</option>
+        <option value="東海">東海</option>
+        <option value="近畿">近畿</option>
+        <option value="中国">中国</option>
+        <option value="四国">四国</option>
+        <option value="九州">九州</option>
+        <option value="沖縄">沖縄</option>
+      </select><br><br>
+    趣味：<br>
+      <input type="checkbox" name="hobby" value="読書">読書
+      <input type="checkbox" name="hobby" value="スポーツ">スポーツ<br>
+      <input type="checkbox" name="hobby" value="音楽">音楽
+      <input type="checkbox" name="hobby" value="その他">その他<br>
+      <br><br>
+
+      <input type="submit" value="送信">
+      <input type="reset" value="キャンセル">
+
+  </form>
+</body>
+</html>
